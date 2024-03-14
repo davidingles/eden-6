@@ -41,16 +41,16 @@ const { title } = Astro.props
 			<NavbarMovil />
 		</div>
 		<div class='mainMenu [grid-area:main] overflow-y-auto relative'>
-			<div class=''>
+			<div class='header-menu'>
 				<HeaderMenu />
 			</div>
 			<main>
-				<img class="imagen-de-fondo" src="/img/nave.jpg" alt="">
 				<div class="franja-3D">
-
+					
 					<slot />
-
+					
 				</div>
+				<img class="imagen-de-fondo" src="/img/nave.jpg" alt="">
 			</main>
 		</div>
 		<div class='[grid-area:footer] bg-slate-800'>
@@ -79,9 +79,19 @@ const { title } = Astro.props
 				rgb(222, 171, 18, 0.1)
 			);
 		}
+		.header-menu {
+						/* border: 1px solid red; */
+						height: 66px;
+						display: flex;
+						justify-content: center;
+					}
+		.headerMenu {
+						/* margin-bottom: 1rem; */
+					}
 		.imagen-de-fondo{
 			position: absolute;
 			z-index: 0;
+			top: 66px;
 			overflow-y: auto;
 			min-width: 100%;
 			min-height: 100%;
@@ -96,7 +106,7 @@ const { title } = Astro.props
 			height: 33%;
 			position: absolute;
 			z-index: 1;
-			box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.3);
 		}
 		@media screen and (min-width: 1500px) {
 			.franja-3D{
@@ -152,24 +162,15 @@ const { title } = Astro.props
 			}
 		}
 
-		.light .body {
-			background-color: white;
-			color: rgb(55, 55, 55);
-		}
 		.asideMenu {
 			height: calc(100vh - 104px);
 			background-color: #222;
 		}
-		.light .asideMenu {
-			background-color: #f0f0f0;
-		}
+		
 		.mainMenu {
 			height: calc(100vh - 104px);
-			background-color: #333;
+			/* background-color: #333; */
 			scrollbar-width: thin;
-		}
-		.light .mainMenu {
-			background-color: rgb(245 245 245);
 		}
 
 		.bordeRojo {

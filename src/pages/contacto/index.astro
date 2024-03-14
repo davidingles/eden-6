@@ -46,47 +46,47 @@ const claves = ['ventas', 'diseño', 'logistica', 'admin']
 <Layout title='Sobre nosotros'>
 	<main class='flex flex-col gap-4'>
 		<div
-			class='banner'
+		class='bodyIndex rounded-lg flex overflow-y-auto justify-center items-center'
 		>
+		<ServiciosCarruselReact2
+		client:load
+		cielo2={cielo2}
+		nave={nave}
+		lunes={lunes}
+		nav={nav}
+		video={true}
+		naveThumb1={naveThumb1}
+		naveThumb={naveThumb}
+		naveThumb3={naveThumb3}
+		naveThumb2={naveThumb2}
+		claves={claves}
+		textos2={textos2}
+		/>
+	</div>
+	<div
+		class='banner'
+	>
 
-			<section class='flex flex-col md:flex-row pr-12'>
-				<h3 class='translate-x-4 pr-4'>Llámanos al teléfono:</h3>
-				<span class='translate-x-4'>
-					<TextoAnimadoTelefono />
-				</span>
-			</section>
-			<section class='flex items-center'>
-				<span class='translate-x-0'> Encuéntranos en el mapa:</span>
-				<a
-					class='spin p-4 blend text-red-500'
-					target='_blank'
-					href='https://maps.app.goo.gl/QZcyPLooNu41XfmS6'
-				>
-					<Logo
-						style='width:33px'
-						fill='fill:currentColor;'
-					/>
-				</a>
-			</section>
-		</div>
-		<div
-			class='bodyIndex rounded-lg flex overflow-y-auto justify-center items-center'
-		>
-			<ServiciosCarruselReact2
-				client:load
-				cielo2={cielo2}
-				nave={nave}
-				lunes={lunes}
-				nav={nav}
-				video={true}
-				naveThumb1={naveThumb1}
-				naveThumb={naveThumb}
-				naveThumb3={naveThumb3}
-				naveThumb2={naveThumb2}
-				claves={claves}
-				textos2={textos2}
-			/>
-		</div>
+		<section class='flex flex-col md:flex-row pr-12'>
+			<h3 class='translate-x-4 pr-4'>Llámanos al teléfono:</h3>
+			<span class='translate-x-4'>
+				<TextoAnimadoTelefono />
+			</span>
+		</section>
+		<section class='flex items-center'>
+			<span class='translate-x-0'> Encuéntranos en el mapa:</span>
+			<a
+				class='spin p-4 blend text-red-500'
+				target='_blank'
+				href='https://maps.app.goo.gl/QZcyPLooNu41XfmS6'
+			>
+				<Logo
+					style='width:33px'
+					fill='fill:currentColor;'
+				/>
+			</a>
+		</section>
+	</div>
 	</main>
 </Layout>
 
@@ -105,7 +105,7 @@ const claves = ['ventas', 'diseño', 'logistica', 'admin']
 	}
 	.banner {
 		margin-top: 1rem;
-		background-color: #f5f5f5;
+		background-color: rgb(255, 255, 255, 0.3);
 		color: white;
 		font-weight: bold;
 		display: flex;

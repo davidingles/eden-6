@@ -49,17 +49,16 @@ const { title } = Astro.props
 		<!--  -->
 		<!-- //!!!:BODY ================================= -->
 		<div class='mainMenu [grid-area:main] overflow-y-auto relative'>
-			<!-- //?: header=================================== -->
-			<div class=''>
+			<div class='header-menu'>
 				<HeaderMenu />
 			</div>
 			<!-- //?: header=================================== -->
 			<main>
-				<img class="imagen-de-fondo" src="/img/nave.jpg" alt="">
-
+				
 				<div class=''>
 					<slot />
 				</div>
+				<img class="imagen-de-fondo" src="/img/nave.jpg" alt="">
 			</main>
 		</div>
 		<!-- //!!!:BODY ================================= -->
@@ -94,10 +93,20 @@ const { title } = Astro.props
 				rgb(222, 171, 18, 0.1)
 			);
 		}
+		.header-menu {
+						/* border: 1px solid red; */
+						height: 66px;
+						display: flex;
+						justify-content: center;
+					}
 		.imagen-de-fondo {
 			opacity: 0.4;
 			position: absolute;
-			z-index: -0;
+			top: 66px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
 			overflow-y: auto;
 			min-width: auto;
 			min-height: 100vh;
@@ -111,7 +120,7 @@ const { title } = Astro.props
 			font-family: 'CircularStd', system-ui, sans-serif;
 			background-color: #222;
 			color: white;
-			background-size: 224px;
+			/* background-size: 224px; */
 			scroll-behavior: smooth;
 			scrollbar-color: var(--auxi1) black;
 			scrollbar-width: thin;
@@ -144,7 +153,7 @@ const { title } = Astro.props
 				display: none;
 			}
 			.mainMenu {
-				translate: 0 -9rem;
+				translate: 0 -11rem;
 				height: 100vh;
 			}
 			.navbar__movil{
@@ -162,12 +171,9 @@ const { title } = Astro.props
 			height: calc(100vh - 104px);
 			background-color: #222;
 		}
-		.light .asideMenu {
-			background-color: #f0f0f0;
-		}
 		.mainMenu {
 			height: calc(100vh - 104px);
-			background-color: #333;
+			/* background-color: #333; */
 			scrollbar-width: thin;
 		}
 
