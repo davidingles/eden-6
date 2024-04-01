@@ -16,6 +16,23 @@ export const books = [
 		scaleVideo: 1.5
 
 	},
+
+	{
+		id: 'lonchemur',
+		title: 'Bandeja con Cotas',
+		img: '/catalogo/render_lonchemur.png',
+		opinion: 'Bandeja automontable acotada.',
+		author: 'David Inglés',
+		categoria: 'Bandejas',
+		tamaño: 3,
+		escala: 1,
+		posicion: -.3,
+		glbSource: '/gltf/lonchemur5.glb',
+		three: '1P0221',
+		video: '/videos/montajes/lonchemur.webm',
+		scaleVideo: 1.5
+
+	},
 	{
 		id: 'embargos',
 		title: 'Bandeja con Cotas',
