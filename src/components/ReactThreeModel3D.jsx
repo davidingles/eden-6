@@ -23,7 +23,7 @@ function Model({ url, miEscala, miPosicion }) {
 		group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-3 + Math.sin(t)) / 40, .8)
 	})
 	return (
-		<group ref={group} dispose={null} position={[0, 2, 0]} scale={miEscala} >
+		<group ref={group} dispose={null} position={[0, 2, 0]} scale={miEscala}>
 			<Clone object={scene} castShadow receiveShadow />
 		</group >
 	)

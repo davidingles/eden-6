@@ -4,6 +4,7 @@ import { books } from '../data/books.js'
 import BtnEstrellasEstuches from '../components/botones/BtnEstrellasEstuches.astro'
 import BtnEstrellasExpositores from '../components/botones/BtnEstrellasExpositores.astro'
 import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
+import Buscador from '../components/icons/Buscador.astro'
 ---
 
 <script is:inline>
@@ -19,8 +20,28 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 		})
 	})
 </script>
-
-<div id="home" class='mt-10 mb-2 flex flex-col md:flex-row'>
+<div class='search'>
+	<Buscador />
+	<input
+		class='input'
+		type='text'
+		autofocus
+		placeholder='escribe la referencia'
+	/>
+</div>
+<style>
+	.search {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		display: flex;
+		gap: 1rem;
+	}
+</style>
+<div
+	id='home'
+	class='mt-10 mb-2 flex flex-col md:flex-row'
+>
 	<a
 		class='opts p-4'
 		href='#estuches'
@@ -40,11 +61,23 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 		<BtnEstrellasExpositores />
 	</a>
 </div>
-<div id="estuches" class="arrow">Estuches</div>
-<a href="#home" class="subir">
-	<img class="flecha" src="./svg/flechaSube.svg" alt="flecha" />
+<div
+	id='estuches'
+	class='arrow'
+>
+	Estuches
+</div>
+<a
+	href='#home'
+	class='subir'
+>
+	<img
+		class='flecha'
+		src='./svg/flechaSube.svg'
+		alt='flecha'
+	/>
 </a>
-<div class="linea-blanca"></div>
+<div class='linea-blanca'></div>
 <div
 	class='seccion grid sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center m-auto'
 >
@@ -59,6 +92,7 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 							title={book.title}
 							img={book.img}
 							three={book.three}
+							referencia={book.referencia}
 						/>
 					</ul>
 				)
@@ -66,11 +100,23 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 	}
 </div>
 
-<div id='cajas'class="arrow">Cajas</div>
-<a href="#home" class="subir">
-	<img class="flecha" src="./svg/flechaSube.svg" alt="flecha" />
+<div
+	id='cajas'
+	class='arrow'
+>
+	Cajas
+</div>
+<a
+	href='#home'
+	class='subir'
+>
+	<img
+		class='flecha'
+		src='./svg/flechaSube.svg'
+		alt='flecha'
+	/>
 </a>
-<div class="linea-blanca"></div>
+<div class='linea-blanca'></div>
 
 <div
 	class='seccion grid sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center m-auto'
@@ -93,11 +139,23 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 	}
 </div>
 
-<div id="expositores" class="arrow">Expositores</div>
-<a href="#home" class="subir">
-	<img class="flecha" src="./svg/flechaSube.svg" alt="flecha" />
+<div
+	id='expositores'
+	class='arrow'
+>
+	Expositores
+</div>
+<a
+	href='#home'
+	class='subir'
+>
+	<img
+		class='flecha'
+		src='./svg/flechaSube.svg'
+		alt='flecha'
+	/>
 </a>
-<div class="linea-blanca"></div>
+<div class='linea-blanca'></div>
 
 <div
 	class='seccion grid sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center m-auto'
@@ -120,29 +178,37 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 	}
 </div>
 <style>
-	.flecha{
+	.input {
+		border: white solid 2px;
+		background-color: rgb(255, 255, 255, 0.05);
+		color: white;
+		height: 66px;
+		border-radius: 9px;
+		padding-left: 1rem;
+	}
+	.flecha {
 		display: inline;
 		width: 22px;
 		height: 22px;
 		margin-left: 1rem;
 	}
-	.flecha:hover{
-		transition: .3s;
+	.flecha:hover {
+		transition: 0.3s;
 		scale: 1.2;
 		translate: 0 -3px;
 	}
-	.arrow{
+	.arrow {
 		display: inline;
 		margin-left: 2rem;
 		padding: 1rem;
 	}
-	.seccion{
+	.seccion {
 		margin-bottom: 1rem;
 	}
-	.subir{
+	.subir {
 		display: inline;
 	}
-		.linea-blanca {
+	.linea-blanca {
 		border-top: 1px solid white;
 		margin-top: 10px;
 		margin-bottom: 20px;
@@ -163,8 +229,6 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 			0px 0px 5px #000;
 	}
 
-
-
 	.opts {
 		color: white;
 		font-weight: bold;
@@ -172,5 +236,4 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 	.opts:hover {
 		text-decoration: underline;
 	}
-
 </style>

@@ -4,13 +4,14 @@ export interface Props {
 	id: string
 	title: string
 	img: string
-	three?: string
+	referencia: string
 }
 
-const { id, title, img, three } = Astro.props
+const { id, title, img, referencia = '_' } = Astro.props
 ---
 
 <a href=`giro/${id}`>
+	<p>{referencia}</p>
 	<img
 		transition:animate={fade({ duration: '1s' })}
 		transition:name='david'

@@ -36,7 +36,7 @@ export default function EstucheConAsas({ url, escala, posicion, velocidadRotacio
 			<Canvas camera={{ position: [0, .4, -0.6], near: .01, fov: 50 }}>
 				<ambientLight intensity={4} />
 				<Suspense fallback={<Fallback />}>
-					<Model url={url} miEscala={escala} miPosicion={posicion} className={estilos.model}  />
+					<Model url={url} miEscala={escala} miPosicion={posicion} className={estilos.model} />
 				</Suspense>
 				<OrbitControls autoRotate autoRotateSpeed={velocidadRotacion} />
 
@@ -44,3 +44,4 @@ export default function EstucheConAsas({ url, escala, posicion, velocidadRotacio
 		</>
 	)
 }
+
