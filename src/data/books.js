@@ -1,20 +1,17 @@
 export const books = [
-
 	{
-		id: '1P0221',
-		title: 'Bandeja con Cotas',
-		img: '/catalogo/1P0221.png',
-		opinion: 'Bandeja automontable acotada.',
-		author: 'David Inglés',
+		id: 'troquel1g0102',
+		title: 'Referencia: troquel1g0102',
+		img: '/catalogo/troquel1g0102.png',
+		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		author: 'Vicente Latorre',
+		three: 'Troquel1g0102',
 		categoria: 'Bandejas',
-		tamaño: 3,
-		escala: 1,
+		referencia: '2410',
+		video: '/videos/montajes/2410.webm',
+		glbSource: '/gltf/2410.glb',
 		posicion: .3,
-		glbSource: '/gltf/1P0221.glb',
-		three: '1P0221',
-		video: '/videos/montajes/v1P0221.webm',
-		scaleVideo: 1.5
-
+		escala: .7,
 	},
 
 	{
@@ -30,8 +27,71 @@ export const books = [
 		glbSource: '/gltf/lonchemur5.glb',
 		three: '1P0221',
 		video: '/videos/montajes/lonchemur.webm',
-		scaleVideo: 1.5
+		scaleVideo: 1.5,
+		referencia: '2411',
 
+	},
+	{
+		id: 'troquelMaleta',
+		title: 'Referencia: 2412',
+		img: '/catalogo/troquelMaleta.png',
+		// opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		author: 'Vicente Latorre',
+		three: 'TroquelMaleta',
+		categoria: 'Bandejas',
+		referencia: '2412',
+		posicion: .0,
+		escala: 1.1,
+		video: '/videos/montajes/2412.webm',
+		tamaño: 1,
+		glbSource: '/gltf/2412.glb',
+	},
+	{
+		id: '1P0221',
+		title: 'Bandeja con Cotas',
+		img: '/catalogo/1P0221.png',
+		opinion: 'Bandeja automontable acotada.',
+		author: 'David Inglés',
+		categoria: 'Bandejas',
+		tamaño: 3,
+		escala: 1,
+		posicion: .3,
+		glbSource: '/gltf/1P0221.glb',
+		three: '1P0221',
+		video: '/videos/montajes/v1P0221.webm',
+		scaleVideo: 1.5,
+		referencia: '2420'
+	},
+	{
+		id: 'troquel1g0198',
+		title: 'Referencia: troquel1g0198',
+		img: '/catalogo/img1G0198.png',
+		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		author: 'Vicente Latorre',
+		three: 'Troquel1g0198',
+		video: '/videos/montajes/2404.webm',
+		categoria: 'Bandejas',
+		tamaño: 2,
+		escala: .8,
+		posicion: -.3,
+		glbSource: '/gltf/2404.glb',
+		referencia: '2430'
+
+	},
+	{
+		id: 'troquel1g0011',
+		title: 'Referencia: troquel1g0011',
+		img: '/catalogo/troquel1g0011.png',
+		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		author: 'Vicente Latorre',
+		three: 'troquel1g0011',
+		glbSource: '/gltf/troquel1g0011.glb',
+		video: '/videos/montajes/v__1g0011.webm',
+		categoria: 'Bandejas',
+		tamaño: 1,
+		escala: 1,
+		posicion: .3,
+		referencia: '2440'
 	},
 	{
 		id: 'embargos',
@@ -62,9 +122,12 @@ export const books = [
 		glbSource: '/gltf/4G0288_cazoletas.glb',
 		three: '1P0221',
 		video: '/videos/montajes/v4G02870001_cazoletas.webm',
-		scaleVideo: 1.5
+		scaleVideo: 1.5,
+		referencia: '2501'
+
 
 	},
+
 	{
 		id: 'cajaB1',
 		title: 'cajaB1',
@@ -81,6 +144,7 @@ export const books = [
 		scaleVideo: 1.5
 
 	},
+
 	{
 		id: 'ExpositorDM',
 		title: 'PLV y Expositores',
@@ -92,41 +156,20 @@ export const books = [
 
 	},
 	{
-		id: 'troquel1g0011',
-		title: 'Referencia: troquel1g0011',
-		img: '/catalogo/troquel1g0011.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		id: 'troquel4e0066',
+		title: 'Referencia: troquel4e0066',
+		img: '/catalogo/Render4e0066-BIS.png',
+		opinion: 'Estuche personalizable. Automontable con un pegado. Para 3 boterllas con seraprador y ventanas',
 		author: 'Vicente Latorre',
-		three: 'troquel1g0011',
-		glbSource: '/gltf/troquel1g0011.glb',
-		video: '/videos/montajes/v__1g0011.webm',
+		three: 'Troquel4e0066',
+		video: '/videos/montajes/video4e0066.webm',
 		categoria: 'Bandejas',
+		escala: 1.3,
+		posicion: -.9,
 		tamaño: 1,
-		escala: 1,
-		posicion: .3
-	},
-	{
-		id: 'troquel1g0198',
-		title: 'Referencia: troquel1g0198',
-		img: '/catalogo/img1G0198.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'Troquel1g0198',
-		video: '/videos/montajes/video1g0198.mp4',
-		categoria: 'Bandejas',
-		tamaño: 1,
-		escala: .7,
-		posicion: -.3,
-		glbSource: '/gltf/Troquel1G0198.gltf'
-	},
-	{
-		id: 'troquel1g0102',
-		title: 'Referencia: troquel1g0102',
-		img: '/catalogo/troquel1g0102.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'Troquel1g0102',
-		categoria: 'Bandejas'
+		glbSource: '/gltf/2610.glb',
+		referencia: '2610'
+
 	},
 	{
 		id: '1L0024',
@@ -141,26 +184,21 @@ export const books = [
 		escala: 1,
 		video: '/videos/montajes/v_1L0024.webm',
 		tamaño: 1,
-		glbSource: '/gltf/1L0024.glb'
+		glbSource: '/gltf/1L0024.glb',
+		referencia: '301'
 	},
-	{
-		id: 'troquel1P0572',
-		title: 'Referencia: troquel1P0572',
-		img: '/catalogo/1P0572.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'Troquel1P0572',
-		categoria: 'Bandejas'
-	},
-	{
-		id: 'troquelComedero',
-		title: 'Referencia: troquelComedero',
-		img: '/catalogo/troquelComedero.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'TroquelComedero',
-		categoria: 'Bandejas'
-	},
+	// {
+	// 	id: 'troquel1P0572',
+	// 	title: 'Referencia: troquel1P0572',
+	// 	img: '/catalogo/1P0572.png',
+	// 	opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+	// 	author: 'Vicente Latorre',
+	// 	three: 'Troquel1P0572',
+	// 	categoria: 'Bandejas',
+	// 	referencia: 'ES01A'
+
+	// },
+
 	{
 		id: 'troquelMesaFeria',
 		title: 'Referencia: troquelMesaFeria',
@@ -186,17 +224,11 @@ export const books = [
 		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
 		author: 'Vicente Latorre',
 		three: 'TroquelMando',
-		categoria: 'Bandejas'
+		categoria: 'Bandejas',
+		referencia: 'ES02C'
+
 	},
-	{
-		id: 'troquelMaleta',
-		title: 'Referencia: troquelMaleta',
-		img: '/catalogo/troquelMaleta.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'TroquelMaleta',
-		categoria: 'Bandejas'
-	},
+
 	{
 		id: 'troquelCajaB1',
 		title: 'Referencia: troquelCajaB1',
@@ -220,20 +252,7 @@ export const books = [
 		tamaño: 1,
 		glbSource: '/gltf/caballete-03.glb'
 	},
-	{
-		id: 'troquel4e0066',
-		title: 'Referencia: troquel4e0066',
-		img: '/catalogo/Render4e0066-BIS.png',
-		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
-		author: 'Vicente Latorre',
-		three: 'Troquel4e0066',
-		video: '/videos/montajes/video4e0066.webm',
-		categoria: 'Bandejas',
-		escala: .9,
-		posicion: -.4,
-		tamaño: 1,
-		glbSource: '/gltf/Troquel4e0066.gltf'
-	},
+
 
 	{
 		id: 'troquel1p0391',
@@ -273,8 +292,8 @@ export const books = [
 		video: '/videos/montajes/videoJamonero.webm',
 		categoria: 'Bandejas',
 		escala: .8,
-		posicion: .3
-
+		posicion: .3,
+		glbSource: '/gltf/jamoneroMacondo2.glb'
 	},
 	{
 		id: 'dianaTiro',
