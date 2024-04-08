@@ -13,6 +13,20 @@ export const books = [
 		posicion: .3,
 		escala: .7,
 	},
+	{
+		id: 'grafiter',
+		title: 'Referencia: grafiter',
+		img: '/catalogo/grafiter.png',
+		opinion: 'Estuche remontable con cierre de tapa y perforado para unir a otros estuches',
+		author: 'Vicente Latorre',
+		three: 'Troquel1g0102',
+		categoria: 'Bandejas',
+		referencia: 'Estuche Forrado',
+		// video: '/videos/montajes/2410.webm',
+		glbSource: '/gltf/GRAFITER3.glb',
+		posicion: -.4,
+		escala: .8,
+	},
 
 	{
 		id: 'lonchemur',

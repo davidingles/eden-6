@@ -7,6 +7,13 @@ import BtnEstrellasCajas from '../components/botones/BtnEstrellasCajas.astro'
 import Buscador from '../components/icons/Buscador.astro'
 ---
 
+<script>
+	const searchInput = document.getElementById('input')
+	searchInput.addEventListener('input', () => {
+		const valor = searchInput.value.toLowerCase()
+		console.log(valor)
+	})
+</script>
 <script is:inline>
 	document.addEventListener('DOMContentLoaded', (event) => {
 		document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -19,10 +26,14 @@ import Buscador from '../components/icons/Buscador.astro'
 			})
 		})
 	})
+	const handleInput = () => {
+		console.log('valor')
+	}
 </script>
 <div class='search'>
 	<Buscador />
 	<input
+		id='input'
 		class='input'
 		type='text'
 		autofocus
